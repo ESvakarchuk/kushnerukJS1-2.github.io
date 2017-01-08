@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HomeworkJS 1-2</title>
+</head>
+<body>
+  <script type="text/javascript">
+
+  var base = +prompt('Введите число');
+  var exponent = +prompt('Введите степень');
+
+  function toExponent(x, n) {
+      var result = 1;
+      for (var i = 0; i < n; i++)
+      {
+          result = result * x;
+          // console.log(result);
+      }
+      alert('Ваше число = ' + result);
+  }
+
+  toExponent(base, exponent);
+
+  </script>
+</body>
+</html>

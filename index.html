@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HomeworkJS 1-2(part2)</title>
+</head>
+
+<body>
+
+    <script type="text/javascript">
+        var nameArray = Array();
+
+        for (var i = 0; i < 5; i++) {
+            nameArray.push(prompt('Введите любое имя', 'Сюда'));
+        }
+
+        var yourName = prompt('Введите Ваше имя');
+
+        switch (yourName) {
+            case nameArray[0]:
+            case nameArray[1]:
+            case nameArray[2]:
+            case nameArray[3]:
+            case nameArray[4]:
+                {
+                    alert(yourName + ', вы успешно вошли');
+                    break;
+                }
+            default:
+                {
+                    alert('Совпадений не найдено!');
+                }
+
+        }
+    </script>
+
+</body>
+
+</html>
